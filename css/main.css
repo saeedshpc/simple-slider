@@ -1,0 +1,83 @@
+body {
+    padding: 20px;
+    font-family: Roboto;
+}
+
+/*   CARD SLIDER */
+.cardSlider .wrapper {
+    position: relative;
+}
+
+.card_container {
+    box-sizing: border-box;    
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    background: #B8B4B4;
+}
+
+.card_container .item {
+    box-sizing: border-box;
+    height: 300px;
+    display: none;
+}
+
+.card_container .item.active {
+    display: block;   
+    padding: 20px;
+}
+.item .row .left {
+    width: 30%;
+    float: left;
+}
+
+.item .row .right {
+    width: 70%;
+    float: left;
+}
+.item .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* BTNS */
+
+.action_btns {
+    position: absolute;
+    width: 100%;
+    top: 99px;
+}
+
+.action_btns .btn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    color: #0275d8;
+    font-size: 50px;
+}
+
+.action_btns .btn.btn_prev {
+    float: left;
+}
+.action_btns .btn.btn_next {
+    float: right;
+}
+
+/* SLIDE COUNTER */
+
+.count_slider {
+    width: 139px;
+    background: #0275d8;
+    color: #FFF;
+    float: right;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.count_slider span {
+    font-weight: bold;
+}
